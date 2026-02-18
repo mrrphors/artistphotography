@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #4a90e2;
+}
+
+.btn-outline {
+  background: black;
+  padding: 12px 25px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #4a90e2;
+  color: white;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.05);
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.team-card h4 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.gallery-item img {
+  transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay text style */
+.gallery-item .absolute {
+  transition: opacity 0.4s ease;
+}

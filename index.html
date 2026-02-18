@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Modern Business Website" />
+    <meta name="keywords" content="Business, Design, Agency" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Artist Photography</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-white text-black">
+    <!-- Navbar -->
+    <header class="fixed w-full bg-white shadow z-50">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">Artist Photography</h1>
+
+        <nav class="hidden md:flex space-x-8 font-semibold">
+          <a href="#home" class="group relative">
+            <span class="hover:text-blue-600 transition"> Home </span>
+
+            <span
+              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"
+            >
+            </span>
+          </a>
+
+          <a href="#services" class="group relative">
+            <span class="hover:text-blue-600 transition">Services</span>
+            <span
+              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"
+            >
+            </span>
+          </a>
+
+          <a href="#portfolio" class="group relative">
+            <span class="hover:text-blue-600 transition">Portfolio</span>
+            <span
+              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"
+            >
+            </span>
+          </a>
+
+          <a href="#about" class="group relative">
+            <span class="hover:text-blue-600 transition">About</span>
+            <span
+              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"
+            >
+            </span>
+          </a>
+
+          <a href="#contact" class="group relative">
+            <span class="hover:text-blue-600 transition">Contact</span>
+            <span
+              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"
+            >
+            </span>
+          </a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden bg-white p-4">
+        <a class="block py-2" href="#home">Home</a>
+        <a class="block py-2" href="#services">Services</a>
+        <a class="block py-2" href="#portfolio">Portfolio</a>
+        <a class="block py-2" href="#about">About</a>
+        <a class="block py-2" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center text-center bg-cover bg-center"
+      style="
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(artistPhoto.jpg);
+      "
+    >
+      <div class="max-w-3xl px-4 text-white">
+        <h2 class="text-5xl font-bold mb-6">
+          Welcome to Artist Photography Studio
+        </h2>
+        <p class="text-gray-200 mb-8">
+          Keep the best photos & film of your memories
+        </p>
+
+        <div class="space-x-4">
+          <button class="btn-primary">Get Started</button>
+          <button class="btn-outline">View Work</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="container mx-auto text-center">
+        <h3 class="section-title">Our Services</h3>
+
+       <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+  <a href="service-web.html" class="card block hover:shadow-xl transition">
+    <i class="fas fa-laptop-code text-4xl text-blue-500"></i>
+    <h4></h4>
+    <p>Reviews & Comments </p>
+  </a>
+
+  <a href="https://wfolio.com/my/disk" class="card block hover:shadow-xl transition">
+    <i class="fas fa-paint-brush text-4xl text-blue-500"></i>
+    <h4>
+    ចូលទៅកាន់Downloardរូបភាព</h4>
+  </a>
+
+  <a href="service-marketing.html" class="card block hover:shadow-xl transition">
+    <i class="fas fa-bullhorn text-4xl text-blue-500"></i>
+    <h4></h4>
+    <p>Grow your brand online.</p>
+  </a>
+
+</div>
+
+        </div>
+      </div>
+    </section>
+
+  <section id="portfolio" class="py-20 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h3 class="text-4xl font-bold mb-12">Our Projects</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8" id="gallery">
+
+      <!-- Project 1: Wedding Ceremony -->
+      <div class="gallery-item group relative overflow-hidden rounded-xl shadow-xl cursor-pointer" data-group="wedding">
+        <img src="10.jpg" alt="Wedding Ceremony Preview"
+             class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+          <h4 class="text-white text-2xl font-semibold">Form Engagement</h4>
+        </div>
+      </div>
+
+      <!-- រូបភាពច្រើនទៀតសម្រាប់ Wedding Ceremony (លាក់) -->
+      <img src="1.jpg" class="hidden" data-group="wedding">
+      <img src="2.jpg" class="hidden" data-group="wedding">
+      <img src="3.jpg" class="hidden" data-group="wedding">
+      <img src="4.jpg" class="hidden" data-group="wedding">
+      <img src="5.jpg" class="hidden" data-group="wedding">
+      <img src="6.jpg" class="hidden" data-group="wedding">
+      <img src="7.jpg" class="hidden" data-group="wedding">
+      <img src="8.jpg" class="hidden" data-group="wedding">
+      <img src="9.jpg" class="hidden" data-group="wedding">
+      <img src="11.jpg" class="hidden" data-group="wedding">
+      <!-- បន្ថែមរូបបន្ថែមបានទៀត គ្រាន់តែ copy បន្ទាត់ <img src="..." class="hidden" data-group="wedding"> -->
+
+      <!-- Project 2 -->
+      <div class="gallery-item group relative overflow-hidden rounded-xl shadow-xl cursor-pointer" data-group="project2">
+        <img src="prewedding2.jpg" alt="Pre-wedding Preview"
+             class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+          <h4 class="text-white text-2xl font-semibold">Pre-Wedding</h4>
+        </div>
+      </div>
+      <img src="prewedding1.jpg" class="hidden" data-group="project2">
+      <img src="prewedding3.jpg" class="hidden" data-group="project2">
+
+      <!-- Project 3 -->
+      <div class="gallery-item group relative overflow-hidden rounded-xl shadow-xl cursor-pointer" data-group="project3">
+        <img src="wedding2.jpg" alt="Birthday Preview"
+             class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+          <h4 class="text-white text-2xl font-semibold">Wedding</h4>
+        </div>
+      </div>
+      <img src="Wedding1.jpg" class="hidden" data-group="project3">
+      <img src="wedding3.jpg" class="hidden" data-group="project3">
+      <img src="Wedding4.jpg" class="hidden" data-group="project3">
+      <img src="wedding5.jpg" class="hidden" data-group="project3">
+      <img src="Wedding6.jpg" class="hidden" data-group="project3">
+      <img src="wedding7.jpg" class="hidden" data-group="project3">
+
+      <!-- Project 4 -->
+      <div class="gallery-item group relative overflow-hidden rounded-xl shadow-xl cursor-pointer" data-group="project4">
+        <img src="Event08.jpg" alt="Family Preview"
+             class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+          <h4 class="text-white text-2xl font-semibold">Birthday</h4>
+        </div>
+      </div>
+      <img src="Event02.jpg" class="hidden" data-group="project4">
+      <img src="Event03.jpg" class="hidden" data-group="project4">
+      <img src="Event04.jpg" class="hidden" data-group="project4">
+      <img src="Event05.jpg" class="hidden" data-group="project4">
+      <img src="Event06.jpg" class="hidden" data-group="project4">
+      <img src="Event07.jpg" class="hidden" data-group="project4">
+      <img src="Event09.jpg" class="hidden" data-group="project4">
+      <img src="Event10.jpg" class="hidden" data-group="project4">
+      <img src="Event11.jpg" class="hidden" data-group="project4">
+
+      <!-- Project 5 -->
+      <div class="gallery-item group relative overflow-hidden rounded-xl shadow-xl cursor-pointer" data-group="project5">
+        <img src="https://picsum.photos/600/400?random=50" alt="Graduation Preview"
+             class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+          <h4 class="text-white text-2xl font-semibold">Graduation</h4>
+        </div>
+      </div>
+      <img src="https://picsum.photos/600/400?random=51" class="hidden" data-group="project5">
+
+      <!-- Project 6 -->
+      <div class="gallery-item group relative overflow-hidden rounded-xl shadow-xl cursor-pointer" data-group="project6">
+        <img src="https://picsum.photos/600/400?random=60" alt="Product Preview"
+             class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+          <h4 class="text-white text-2xl font-semibold">Product Photography</h4>
+        </div>
+      </div>
+      <img src="https://picsum.photos/600/400?random=61" class="hidden" data-group="project6">
+      <img src="https://picsum.photos/600/400?random=62" class="hidden" data-group="project6">
+
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h3 class="section-title text-center mb-12">ទាក់ទងមកពួកយើង</h3>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Form ខាងឆ្វេង -->
+          <div>
+            <form
+              action="https://formspree.io/f/{your-form-id}"
+              method="POST"
+              class="space-y-6"
+            >
+              <div>
+                <label for="name" class="block mb-2 font-medium text-gray-700"
+                  >ឈ្មោះ</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="ឈ្មោះរបស់អ្នក"
+                  required
+                  class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block mb-2 font-medium text-gray-700"
+                  >អ៊ីមែល</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@email.com"
+                  required
+                  class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block mb-2 font-medium text-gray-700"
+                  >សារ</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="សរសេរសាររបស់អ្នកនៅទីនេះ..."
+                  required
+                  class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition resize-y"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-black text-white py-4 rounded-lg font-semibold hover:bg-gray-800 transition duration-300"
+              >
+                ផ្ញើសារ
+              </button>
+            </form>
+          </div>
+
+          <!-- ផ្នែកខាងស្តាំ (Map ឬព័ត៌មានបន្ថែម) -->
+          <div
+            class="bg-gray-200 rounded-lg overflow-hidden h-[400px] flex items-center justify-center"
+          >
+            <p class="text-gray-600 text-lg">
+              ទីតាំង (Google Map ឬរូបភាពស្ទូឌីយោ)
+            </p>
+            <!-- បើចង់ដាក់ Google Map ពិតប្រាកដ អាចបន្ថែម iframe នៅទីនេះ -->
+            <!-- ឧទាហរណ៍: <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-10">
+      <div class="container mx-auto text-center">
+        <p class="mb-4">© 2026 Modern Studio</p>
+
+        <div class="flex justify-center space-x-6 text-2xl">
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/share/1YpK5KieFK/?mibextid=wwXIfr"
+            target="_blank"
+            class="hover:text-blue-500 transition"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/artis.ttphotography?igsh=MWZwZWZ2OG96ZXYxdQ%3D%3D&utm_source=qr"
+            target="_blank"
+            class="hover:text-pink-500 transition"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Telegram -->
+          <a
+            href="https://t.me/Artist_photography_Cambodia"
+            target="_blank"
+            class="hover:text-sky-400 transition"
+          >
+            <i class="fab fa-telegram"></i>
+          </a>
+
+          <!-- Twitter -->
+          <a href="" target="_blank" class="hover:text-blue-400 transition">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="" target="_blank" class="hover:text-blue-600 transition">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+  <div id="lightbox" class="hidden fixed inset-0 bg-black/95 z-50 flex items-center justify-center">
+  <button id="close" class="absolute top-6 right-8 text-white text-6xl font-bold hover:text-gray-300 transition">&times;</button>
+  
+  <button id="prev" class="absolute left-8 text-white text-7xl font-bold hover:text-gray-300 transition">&lsaquo;</button>
+  <button id="next" class="absolute right-8 text-white text-7xl font-bold hover:text-gray-300 transition">&rsaquo;</button>
+
+  <img id="lightbox-img" src="" alt="Project image" class="max-w-[90%] max-h-[90vh] object-contain rounded-lg shadow-2xl">
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

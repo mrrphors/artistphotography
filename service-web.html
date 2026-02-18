@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Service Detail</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow p-4 text-center font-bold text-xl">
+      Our Service Detail
+    </header>
+
+    <!-- Content -->
+    <section class="container mx-auto px-4 py-16">
+      <h1 class="text-4xl font-bold mb-6 text-center">Reviews & Comments</h1>
+
+      <img src="wedding6.jpg" class="mx-auto rounded-lg shadow mb-8" />
+      <img src="Event08.jpg" class="mx-auto rounded-lg shadow mb-8" />
+      <img src="prewedding3.jpg" class="mx-auto rounded-lg shadow mb-8" />
+      <img src="10.jpg" class="mx-auto rounded-lg shadow mb-8" />
+
+      <p
+        class="max-w-3xl mx-auto text-gray-700 leading-relaxed mb-10 text-center"
+      >
+        This project focuses on building modern responsive websites for
+        photography studios and small businesses.
+      </p>
+
+      <!-- Project Features -->
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg mb-12">
+        <h3 class="font-semibold text-2xl mb-6 text-gray-800"></h3>
+        <!-- Comment Box Section -->
+        <h3 class="font-semibold text-2xl mb-6 text-gray-800 border-t pt-8">
+          មតិពីអតិថិជនReviews & Comments
+        </h3>
+
+        <!-- កន្លែង comment box បង្ហាញ -->
+        <div class="commentbox"></div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a
+          href="index.html"
+          class="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition"
+        >
+          Back to Home
+        </a>
+      </div>
+    </section>
+
+    <!-- CommentBox Scripts -->
+    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <script>
+      // ប្តូរ 'YOUR_PROJECT_ID_HERE' ទៅជា project ID ពិតរបស់បងពី dashboard
+      // ឧទាហរណ៍: commentBox('5719309120700416-proj');
+      commentBox("5711757947437056-proj");
+    </script>
+  </body>
+</html>
